@@ -1,0 +1,42 @@
+.form-control-lg {
+    height: 5vh;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    width: 14vw;
+    font-size: 1rem;
+}
+
+.mt-4, .my-4 {
+    margin-top: 2px !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:  10px;
+    margin-left: -40px;
+}
+
+.form-control:focus {
+    color: purple;
+    background-color: #fff;
+    border-color: purple;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem purple;
+}
+
+.form-control {
+    display: block;
+    width: 100% !important;
+    font-weight: 400;
+    color: purple;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#login-button{
+    font-family: 'Open Sans', sans-serif;
+}

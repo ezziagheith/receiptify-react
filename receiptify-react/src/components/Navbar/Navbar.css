@@ -1,0 +1,46 @@
+.title-color{
+    color: #c78a83 !important;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-color{
+    background-color: whitesmoke !important;
+}
+
+
+.btn-warning {
+    color: #c78a83;
+    font-family: 'Calistoga', cursive;
+    background-color: transparent;
+    border-color: #c78a83;
+    margin-right: 4px;
+}
+
+.btn-warning:hover {
+    color: #c78a83;
+    background-color: transparent;
+    border-color: #c78a83;
+}
+
+.btn-primary {
+    color: #c78a83;
+    font-family: 'Calistoga', cursive;
+    background-color: transparent;
+    border-color: #c78a83;
+}
+
+.btn-primary:hover {
+    color: #c78a83;
+    background-color: transparent;
+    border-color: #c78a83;
+}
+
+#supreme-emperor12{
+    /* text-shadow: 2px 2px 3px gray; */
+}
+
+.navbar-dark .navbar-toggler {
+    color: #c78a83;
+    border-color: #c78a83;
+}
