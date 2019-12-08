@@ -1,0 +1,16 @@
+#stores-popup{
+    position: relative;
+    text-align: right;
+    right: 250px;
+    bottom: 400px;
+    font-size: 60px;
+    color: #c78a83;
+}
+
+#stores-popup2{
+    position: relative;
+    left: 900px;
+    bottom: 350px;
+    width: 300px;
+    height: 300px;
+}
