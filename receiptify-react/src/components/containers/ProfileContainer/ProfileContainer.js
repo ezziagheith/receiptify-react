@@ -1,15 +1,27 @@
 import React, { Component } from 'react';
 import Profile from '../../Profile/Profile';
+import ReceiptContainer from '../../ReceiptContainer/ReceiptContainer'
 // import ProfilePostsContainer from '../ProfilePostsContainser/ProfilePostsContainer';
 import axios from 'axios';
 
 class ProfileContainer extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             profile: {},
             firstName: '',
             lastName: '',
+            storeName: '',
+            logoImage: '',
+            body: '',
+            receipts: [],
+            storeList: [],
+            storeInfo: {},
+            currentUser: '',
+            user: '',
+            receiptImage: '',
+            storeId: '',
+
         }
     }  
 
@@ -46,7 +58,8 @@ class ProfileContainer extends Component {
                             lastName={this.state.lastName}
                             />
                         </div>
-                        <div className="col-sm">
+                        <div>
+                            <ReceiptContainer currentUser={localStorage.getItem('uid')}/>
                             {/* <ProfilePostsContainer /> */}
                         </div>
                     </div>
