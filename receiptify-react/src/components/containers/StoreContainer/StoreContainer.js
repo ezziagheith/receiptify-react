@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import './StoreContainer.css'
 
 import EmptyTest from '../EmptyTest/EmptyTest'
-import ReceiptModal from '../EmptyTest/ReceiptModal'
+import ReceiptModalContainer from '../ReceiptModalContainer/ReceiptModalContainer'
 
 class StoreContainer extends Component {
     state = {
@@ -82,9 +82,8 @@ class StoreContainer extends Component {
                 <div>
                     {this.props.match.params.id && <EmptyTest id={this.props.match.params.id}/>}
                 </div>
-                <ReceiptModal 
-                    storeName={this.state.storeName} 
-                    storeList={ this.state.storeList }/>
+                <ReceiptModalContainer 
+                storeList={ this.state.storeList } />
             </div>
             
         )

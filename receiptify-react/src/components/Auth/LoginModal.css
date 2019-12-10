@@ -19,18 +19,18 @@
 }
 
 .form-control:focus {
-    color: purple;
+    color: #c78a83;
     background-color: #fff;
-    border-color: purple;
+    border-color: #c78a83;
     outline: 0;
-    box-shadow: 0 0 0 0.1rem purple;
+    box-shadow: 0 0 0 0.1rem #c78a83;
 }
 
 .form-control {
     display: block;
     width: 100% !important;
     font-weight: 400;
-    color: purple;
+    color: #c78a83;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -38,5 +38,22 @@
 }
 
 #login-button{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-warning {
+    color: #c78a83;
+    font-family: 'Roboto', sans-serif !important;
+    background-color: transparent;
+    border-color: #c78a83;
+    margin-right: 4px;
+}
+
+
+.btn-primary {
+    color: #c78a83;
+    font-family: 'Roboto', sans-serif !important;
+    /* font-family: 'Calistoga', cursive; */
+    background-color: transparent;
+    border-color: #c78a83;
 }

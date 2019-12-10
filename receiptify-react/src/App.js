@@ -6,6 +6,8 @@ import axios from 'axios';
 
 import './App.css';
 
+// import Upload from './upload/Upload'
+
 class App extends Component {
   state = {
     currentUser: localStorage.getItem('uid'),
@@ -31,6 +33,11 @@ class App extends Component {
       <>
         <Navbar currentUser={this.state.currentUser} setCurrentUser={this.setCurrentUser} logout={this.logout}/>
         <Routes currentUser={this.state.setCurrentUser} setCurrentUser={this.setCurrentUser} />
+        {/* <div className="App">
+          <div className="Card">
+            <Upload />
+          </div>
+        </div> */}
       </>
     );
   };

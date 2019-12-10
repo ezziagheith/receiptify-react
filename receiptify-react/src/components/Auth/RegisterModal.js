@@ -39,10 +39,10 @@ function RegisterModal(props) {
                     <label htmlFor="email">Email</label>
                     <input onChange={props.handleChange} className="form-control form-control-lg" type="email" id="email" name="email" value={props.user.email} />
                   </div>
-                  <div className="form-group">
+                  {/* <div className="form-group">
                     <label htmlFor="currentCity">Current City</label>
                     <input onChange={props.handleChange} className="form-control form-control-lg" type="text" id="currentCity" name="currentCity" value={props.user.currentCity} />
-                  </div>
+                  </div> */}
                   <div className="form-group">
                     <label htmlFor="password">Password</label>
                     <input onChange={props.handleChange} className="form-control form-control-lg" type="password" id="password" name="password" value={props.user.password} />
