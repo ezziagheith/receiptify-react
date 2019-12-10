@@ -14,6 +14,7 @@ class StoreContainer extends Component {
         receipts: [],
         storeList: [],
         storeInfo: {},
+        storeId: ''
     }
 
     componentDidMount () {

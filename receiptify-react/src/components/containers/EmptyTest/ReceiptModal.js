@@ -46,15 +46,16 @@ import './ReceiptModal.css'
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1">
-                                        {props.storeList.map(store=>{
-                                    return <div id= { store._id}>{store.name }</div>
-                                })}
-                                        </Dropdown.Item>
+                                        {/* <Dropdown.Item href="#/action-1"> */}
+                                        {props.storeList.map(store => <Dropdown.Item onClick = {() => props.handleClick(store._id)} href={`#/${store.name}`}>{store.name}</Dropdown.Item> )}
+                                            
+                                         {/* return <div id= { store._id}>{store.name }</div> */}
+                                
+                                        {/* </Dropdown.Item> */}
                                         {/* <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                                         <Dropdown.Item href="#/action-3">Something else</Dropdown.Item> */}
                                     </Dropdown.Menu>
-                                </Dropdown>
+                                </Dropdown>    
                             <div className="form-group">
                                 {/* <label htmlFor="photoUrl">Upload Receipt</label>
                                 <input onChange={props.handleChange} type="file" /> */}

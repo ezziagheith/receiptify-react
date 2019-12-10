@@ -11,7 +11,7 @@ class EmptyTest extends Component  {
       logoImage: '',
     }
   }
-  
+   
   //get store info
   componentDidMount () {
     this.findStore()

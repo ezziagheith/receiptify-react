@@ -12,7 +12,11 @@ class ReceiptModalContainer extends Component {
         receipts: [],
         storeList: [],
         storeInfo: {},
-        currentUser: ''
+        currentUser: '',
+        user: '',
+        receiptImage: '',
+        storeId: '',
+
     }
 
     handleChange = (event) => {
@@ -24,20 +28,32 @@ class ReceiptModalContainer extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         const currentUser = localStorage.getItem('uid')
-        axios.post(`${process.env.REACT_APP_API_URL_LOCAL}/receipts/${currentUser}`,  this.state)
+        axios.post(`${process.env.REACT_APP_API_URL_LOCAL}/receipts/${currentUser}/${this.state.storeId}`,  this.state)
         .then((res) => {
             this.props.history.push('/profile')
         })
         .catch((err) => console.log(err));
     }
+
+    handleClick = (id) => {
+        this.setState({
+            storeId: id
+        })        
+        console.log(id)
+    }
+
     render() {
         return (
             <ReceiptModal 
+            storeId={this.state.storeId}
             storeName={this.state.storeName} 
             storeList={ this.props.storeList } 
             handleChange={this.handleChange} 
             handleSubmit={this.handleSubmit} 
-            body={ this.state.body }/>
+            body={ this.state.body }
+            handleClick={this.handleClick}
+            />
+            
         )
     }
 }

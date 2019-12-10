@@ -75,7 +75,7 @@ class Upload extends Component {
       formData.append("file", file, file.name);
 
     //   req.open("POST", `http://localhost:3000/profile/${currentUser}`);
-      req.open("POST", `http://localhost:3000/profile`);
+      req.open("POST", `http://localhost:4000/upload`);
       req.send(formData);
     });
   }
