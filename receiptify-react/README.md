@@ -1,4 +1,66 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Receiptify
+
+> I have always had trouble looking for receipts that I need to either return something or to get the price difference of something that I bought then later went on sale! Also, all my bags are filled with a bunch of paper receipts so I got fed up and decided to make a receipt organizer website! In Receiptify, users are able to create an account, then add a receipt to the store they purchased something from. They can add a description to each receipt in case they need a reminder about why they uploaded that receipt or if they need to simply keep track of their purchases from that store. 
+
+
+
+## Technologies used
+
+* MERN 
+    * Mongoose
+    * Express
+    * React
+    * Node
+
+* Bootstrap
+
+
+
+## MVP and User Stories
+
+* https://docs.google.com/document/d/1wWP6NXbGyB91vQIKUg8dkCkdqhpGfCuM5juBOZjey1s/edit
+
+* https://app.asana.com/0/1152289359849164/list
+
+## Future Features 
+
+* Being able to click on the store and seeing all your receipts under that particular store
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -65,4 +127,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
