@@ -6,19 +6,15 @@ import { Dropdown} from 'react-bootstrap';
 
 import './ReceiptModal.css'
 
-// class ReceiptModal extends Component {
+
 
  function ReceiptModal (props) {
     const [show, setShow] = useState(false)
     const handleClose = () => setShow(false)
     const handleShow = () => setShow(true)
 
-    
- 
-    // render() {
     return (
         
-        // <h1>HIHIHIHI</h1>
         <div>
             <Button className="create-button" id="create-receipt-btn" variant="warning" onClick={handleShow}>Add Receipt</Button>
             <Modal show={show} onHide={handleClose}>
@@ -28,43 +24,17 @@ import './ReceiptModal.css'
                 <Modal.Body>
                     <div className="container mt-4">                     
                         <form onSubmit={props.handleSubmit}>
-                            {/* <div className="form-group">
-                                <label htmlFor="title">{props.storeName}</label>
-                                <input onChange={props.handleChange} className="form-control form-control-lg" type="text" id="title" name="title" value={props.post.name} />
-                            </div> */}
-                            {/* <div className="dropdown">
-                            <button className="dropbtn">Store</button>
-                            <div className="dropdown-content">
-                                {props.storeList.map(store=>{
-                                    return <div id= { store._id}>{store.name }</div>
-                                })}
-                            </div>
-                        </div> */}
                                 <Dropdown>
                                     <Dropdown.Toggle variant="success" id="dropdown-basic">
                                         Stores
                                     </Dropdown.Toggle>
-
                                     <Dropdown.Menu>
-                                        {/* <Dropdown.Item href="#/action-1"> */}
                                         {props.storeList.map(store => <Dropdown.Item onClick = {() => props.handleClick(store._id)} href={`#/${store.name}`}>{store.name}</Dropdown.Item> )}
-                                            
-                                         {/* return <div id= { store._id}>{store.name }</div> */}
-                                
-                                        {/* </Dropdown.Item> */}
-                                        {/* <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item> */}
                                     </Dropdown.Menu>
                                 </Dropdown>    
                             <div className="form-group">
                                 <label className="receipt-url" htmlFor="photoUrl">Receipt Url:</label>
                                 <input className="input-box" onChange={props.handleChange} type="text" name="receiptImage" />
-                                {/* <div className="App">
-                                    <div className="Card">
-                                        <Upload />
-                                    </div>
-                                </div> */}
-                                {/* <input onChange={this.handleChange} className="form-control form-control-lg" type="text" id="photoUrl" name="photoUrl" value={this.props.post.photoUrl} /> */}
                             </div>
                             <div className="form-group description-box">
                                 <label htmlFor="photoUrl">Description:</label>

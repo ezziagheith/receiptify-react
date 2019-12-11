@@ -23,7 +23,7 @@ class EditForm extends Component {
                     <div className="form-group description-area">
                         <label className="des-title-edit" htmlFor="body">Description:</label>
                         <img width="500" height="500" src={this.state.receiptImage} alt="Receipt Images"/>
-                        <input onChange={this.handleChange} className="form-control form-control-lg1" type="text" id="body" name="body" value={this.state.body} />
+                        <textarea onChange={this.handleChange} className="form-control form-control-lg1" type="text" id="body" name="body" value={this.state.body}></textarea>
                     </div>
                     <button id="login-button"className="btn btn-primary save-button-onedit" type="submit">Save</button>
                     </form>

@@ -26,11 +26,11 @@ function LoginModal (props) {
                 <form onSubmit={props.handleSubmit}>
                   <div className="form-group">
                     <label htmlFor="name">Email</label>
-                    <input onChange={props.handleChange} className="form-control form-control-lg" type="email" id="email" name="email" value={props.user.email} />
+                    <input required onChange={props.handleChange} className="form-control form-control-lg" type="email" id="email" name="email" value={props.user.email} />
                   </div>
                   <div className="form-group">
                     <label htmlFor="password">Password</label>
-                    <input onChange={props.handleChange} className="form-control form-control-lg" type="password" id="password" name="password" value={props.user.password} />
+                    <input required onChange={props.handleChange} className="form-control form-control-lg" type="password" id="password" name="password" value={props.user.password} />
                   </div>
                   <button id="login-button" onClick={handleClose} className="btn btn-primary float-right" type="submit">Login</button>
                 </form>

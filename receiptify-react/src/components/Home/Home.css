@@ -13,10 +13,13 @@ video-div{
 #sickof{
     z-index: 2;
     position: relative;
-    bottom: 900px;
+    top: -350px;
+    /* bottom: px; */
     font-size: 70px;
-    right: 450px;
-    color: #c78a83;
+    right: 440px;
+    color: black;
+    background-color: rgb(199, 138, 131, .7);
+    border-radius: 7%;
 }
 
 
