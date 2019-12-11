@@ -19,10 +19,12 @@ video-div{
     color: #c78a83;
 }
 
+
+
 .header-text{
     position: relative;
     text-align: left;
-    bottom: 400px;
+    bottom: 350px;
     color: #c78a83;
     font-size: 50px;
 }
@@ -87,7 +89,29 @@ video-div{
     position: relative;
     left: 450px;
 }
-/* 
-.too-much-paper{
 
-} */
+
+.too-much-paper{
+    border-bottom: 1px solid black;
+    top: 50px;
+}
+
+.too-many-emails{
+    position: relative;
+    top: 80px;
+    border-bottom: 1px solid black;
+}
+
+.get-organized-sign{
+    position: relative;
+    top: 45px;
+    border-bottom: 1px solid black;
+}
+
+#receipt-barcode2{
+    font-family: 'Libre Barcode 128', cursive;
+    position: relative;
+    left: 470px;
+    bottom: 350px;
+
+}

@@ -4,6 +4,8 @@ import axios from 'axios';
 import Receipt from './Receipt/Receipt';
 import EditForm from './EditForm/EditForm';
 
+import './ReceiptContainer.css'
+
 class ReceiptContainer extends Component {
     constructor(props){
         super(props);
@@ -87,7 +89,7 @@ class ReceiptContainer extends Component {
     render() {
         return (
             <div>
-                <h1>Receipts</h1>
+                <h2 className="word-receipts-profile">Receipts:</h2>
                 {this.state.editMode
                     ?
                     <EditForm receipt={this.state.editReceipt} handleEditSubmit={this.handleEditSubmit} />

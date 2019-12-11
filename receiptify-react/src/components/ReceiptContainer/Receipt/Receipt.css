@@ -1,0 +1,30 @@
+.store-name-on-profile{
+    color: #c78a83;
+}
+
+
+
+.receipt-info{
+    width: 500px;
+    position: relative;
+    right: 600px;
+    top: 150px;
+    border: 1px solid black;
+}
+
+.edit-button{
+    position: relative;
+    top: 5px;
+    right: 250px;
+    border-color: #c78a83;
+    color: #c78a83;
+}
+
+.delete-button{
+    position: relative;
+    top: 5px;
+    right: 220px;
+    border-color: #c78a83;
+    color: #c78a83;
+}
+

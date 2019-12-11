@@ -14,11 +14,14 @@ const Home = () => (
         <video id="background-video" loop muted autoPlay>
             <source src={bagreceipts2} type="video/mp4" />
         </video>
-        <div className="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 className="display-4 font-weight-normal" id="sickof">Sick of digging through your bag?</h1>
+        <div className="col-md-5 p-lg-5 mx-auto my-5" >
+        <h2 className="display-4 font-weight-normal" id="sickof">Sick of losing your receipt?</h2>
         </div>
     </div>
+ 
     <h2 className="header-text organize-receipts-title">Organize Your Receipts</h2>
+
+    <h2 id="receipt-barcode2">Organize Your ReceiptsOrganize Your Receipts</h2>
     <div className="row heading-topics" id="signup-row">
         <div className="col-md-3" id="the-word-topic">
             <img className="bd-placeholder-img swing" src={imagepaper1} alt="Paper Receipts" width="350" height="350" />
@@ -30,7 +33,7 @@ const Home = () => (
         </div>
         <div className="col-md-3 topic1" id="the-word-topic">
             <img className="bd-placeholder-img swing" src={crumbled1} alt="Paper Receipts" width="300" height="300" />
-            <h2 className="topic-text get-organized-sign">Sign Up and Get Organized</h2>
+            <h2 className="topic-text get-organized-sign">Sign up and ditch the receipts</h2>
         </div>
   </div>
     </>

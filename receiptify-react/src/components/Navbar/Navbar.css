@@ -36,11 +36,17 @@
     border-color: #c78a83;
 }
 
-#supreme-emperor12{
-    /* text-shadow: 2px 2px 3px gray; */
-}
+/* #supreme-emperor12{
+    text-shadow: 2px 2px 3px gray;
+} */
 
 .navbar-dark .navbar-toggler {
     color: #c78a83;
     border-color: #c78a83;
+}
+
+#receipt-barcode{
+    font-family: 'Libre Barcode 128', cursive;
+    position: relative;
+    top: 10px;
 }

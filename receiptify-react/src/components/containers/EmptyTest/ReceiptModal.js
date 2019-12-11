@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { Dropdown} from 'react-bootstrap';
-import Upload from '../../../upload/Upload'
+// import Upload from '../../../upload/Upload'
 
 import './ReceiptModal.css'
 
@@ -42,7 +42,7 @@ import './ReceiptModal.css'
                         </div> */}
                                 <Dropdown>
                                     <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                        Dropdown Button
+                                        Stores
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
@@ -57,8 +57,8 @@ import './ReceiptModal.css'
                                     </Dropdown.Menu>
                                 </Dropdown>    
                             <div className="form-group">
-                                <label htmlFor="photoUrl">Receipt Url</label>
-                                <input onChange={props.handleChange} type="text" name="receiptImage" />
+                                <label className="receipt-url" htmlFor="photoUrl">Receipt Url:</label>
+                                <input className="input-box" onChange={props.handleChange} type="text" name="receiptImage" />
                                 {/* <div className="App">
                                     <div className="Card">
                                         <Upload />
@@ -67,7 +67,7 @@ import './ReceiptModal.css'
                                 {/* <input onChange={this.handleChange} className="form-control form-control-lg" type="text" id="photoUrl" name="photoUrl" value={this.props.post.photoUrl} /> */}
                             </div>
                             <div className="form-group description-box">
-                                <label htmlFor="photoUrl">Description</label>
+                                <label htmlFor="photoUrl">Description:</label>
                                 <textarea onChange={ props.handleChange} className="form-control form-control-lg" type="text" id="body" name="body" value={props.post} />
                             </div>
                             <button id="save-button" onClick={handleClose} className="btn btn-primary float-right" type="submit">Add Receipt</button>

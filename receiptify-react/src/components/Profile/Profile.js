@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './Profile.css'
 
 const Profile = (props) => {
 
@@ -8,7 +9,7 @@ const Profile = (props) => {
     if (!props.editProfile) {
         return (
             <div style={{paddingTop:50}}>
-                <h1> {props.firstName} {props.lastName}'s Profile</h1>
+                <h1 className="profile-name-last"> {props.firstName} {props.lastName}'s Profile</h1>
             </div>
         )
     }

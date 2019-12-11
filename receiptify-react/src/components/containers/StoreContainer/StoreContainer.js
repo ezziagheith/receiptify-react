@@ -78,7 +78,7 @@ class StoreContainer extends Component {
             <div>
                 <h1 id="the-word-stores">Stores</h1>
                 <div className="vertical-menu">
-                <div>{stores}</div>
+                <div className="border-around">{stores}</div>
                 </div>
                 <div>
                     {this.props.match.params.id && <EmptyTest id={this.props.match.params.id}/>}
