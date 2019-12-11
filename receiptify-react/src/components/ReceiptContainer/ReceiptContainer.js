@@ -5,10 +5,14 @@ import Receipt from './Receipt/Receipt';
 import EditForm from './EditForm/EditForm';
 
 class ReceiptContainer extends Component {
+    constructor(props){
+        super(props);
+    }
     state = {
         receipts: [],
         editMode: false,
         editReceipt: null,
+        store: ''
     };
 
     fetchReceipts = () => {
@@ -22,6 +26,17 @@ class ReceiptContainer extends Component {
             })
             .catch((err) => console.log(err));
     }
+
+    // fetchStoreInfo = () => {
+    //     axios.get(`${process.env.REACT_APP_API_URL_LOCAL}/store/${this}`)
+    //     .then((res) => {
+    //         console.log(res)
+    //         this.setState({
+    //             store: 
+    //         })
+    //     })
+    //     .catch((err) => console.log(err));
+    // }
 
     toggleEditForm = (receipt) => {
         this.setState(prevState => ({
@@ -52,9 +67,22 @@ class ReceiptContainer extends Component {
         this.toggleEditForm(null);
     }
 
+    handleDeleteSubmit = (event, deleted) => {
+        event.preventDefault();
+        const receiptId = deleted._id
+        axios.delete(`${process.env.REACT_APP_API_URL_LOCAL}/receipts/${receiptId}`)
+        .then((res) => {
+            this.setState({
+                receipts: this.state.receipts.filter(receipt => receipt._id !== deleted._id)
+            })
+        })
+        .catch((err) => console.log(err))
+    }
+
     componentDidMount() {
         this.fetchReceipts();
     } 
+
     
     render() {
         return (
@@ -65,7 +93,7 @@ class ReceiptContainer extends Component {
                     <EditForm receipt={this.state.editReceipt} handleEditSubmit={this.handleEditSubmit} />
                     :
                     this.state.receipts.map(receipt => {
-                        return <Receipt key={receipt._id} receipt={receipt} toggleEditForm={this.toggleEditForm} />
+                        return <Receipt key={receipt._id} receipt={receipt} toggleEditForm={this.toggleEditForm} handleDeleteSubmit={this.handleDeleteSubmit}/>
                     })
                 }
             </div>

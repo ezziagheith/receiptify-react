@@ -18,22 +18,22 @@ const Home = () => (
         <h1 className="display-4 font-weight-normal" id="sickof">Sick of digging through your bag?</h1>
         </div>
     </div>
-    <h2 className="header-text">Organize Your Receipts</h2>
+    <h2 className="header-text organize-receipts-title">Organize Your Receipts</h2>
     <div className="row heading-topics" id="signup-row">
         <div className="col-md-3" id="the-word-topic">
             <img className="bd-placeholder-img swing" src={imagepaper1} alt="Paper Receipts" width="350" height="350" />
-            <h2 className="topic-text">Too much paper?</h2>
+            <h2 className="topic-text too-much-paper">Too much paper?</h2>
         </div>
         <div className="col-md-3" id="the-word-topic">
             <img className="bd-placeholder-img swing" src={emailphone1} alt="Paper Receipts" width="300" height="300" />
-            <h2 className="topic-text">Too many emails?</h2>
+            <h2 className="topic-text too-many-emails">Too many emails?</h2>
         </div>
         <div className="col-md-3 topic1" id="the-word-topic">
             <img className="bd-placeholder-img swing" src={crumbled1} alt="Paper Receipts" width="300" height="300" />
-            <h2 className="topic-text">Sign Up and Get Organized</h2>
+            <h2 className="topic-text get-organized-sign">Sign Up and Get Organized</h2>
         </div>
   </div>
-  </>
+    </>
 )
 
 export default Home;

@@ -57,13 +57,13 @@ import './ReceiptModal.css'
                                     </Dropdown.Menu>
                                 </Dropdown>    
                             <div className="form-group">
-                                {/* <label htmlFor="photoUrl">Upload Receipt</label>
-                                <input onChange={props.handleChange} type="file" /> */}
-                                <div className="App">
+                                <label htmlFor="photoUrl">Receipt Url</label>
+                                <input onChange={props.handleChange} type="text" name="receiptImage" />
+                                {/* <div className="App">
                                     <div className="Card">
                                         <Upload />
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* <input onChange={this.handleChange} className="form-control form-control-lg" type="text" id="photoUrl" name="photoUrl" value={this.props.post.photoUrl} /> */}
                             </div>
                             <div className="form-group description-box">

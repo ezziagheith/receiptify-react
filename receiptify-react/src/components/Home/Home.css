@@ -82,3 +82,12 @@ video-div{
     0% { transform: rotate(3deg); }
     100% { transform: rotate(-3deg); }
 }
+
+.organize-receipts-title{
+    position: relative;
+    left: 450px;
+}
+/* 
+.too-much-paper{
+
+} */
