@@ -6,5 +6,29 @@
 
 .save-button-onedit{
     position: relative;
-    top: 50px;
+    bottom: 140px;
+    left: 120px;
+}
+
+.just-the-body{
+    position: relative;
+    left: 520px;
+    bottom: 200px;
+}
+
+.form-control-lg1{
+    position: relative;
+    left: 540px;
+    bottom: 400px;
+    width: 60vh;
+    height: 40vh;
+    word-wrap: break-word;
+}
+
+.des-title-edit{
+    font-size: 30px;
+    position: relative;
+    left: 550px;
+    top: 60px;
+    color: #c78a83;
 }

@@ -9,7 +9,7 @@ const Receipt = ({ receipt, toggleEditForm, handleDeleteSubmit }) => {
             <div className="receipt-info">
                 <h3 className="store-name-on-profile">{receipt.store.name}</h3>
                 <p className="body-of-profile">{receipt.body}</p>
-                <img width="300" height="300" src={receipt.receiptImage} alt="Receipt Images"/>
+                <img className="zoom" width="300" height="300" src={receipt.receiptImage} alt="Receipt Images"/>
             </div>
             <div>
                 <button className="edit-button" onClick={() => toggleEditForm(receipt)}>Edit</button>

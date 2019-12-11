@@ -20,7 +20,7 @@ import './ReceiptModal.css'
         
         // <h1>HIHIHIHI</h1>
         <div>
-            <Button className="create-button" id="create-receipt-btn" variant="warning" onClick={handleShow}>Create Receipt</Button>
+            <Button className="create-button" id="create-receipt-btn" variant="warning" onClick={handleShow}>Add Receipt</Button>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Add Receipt</Modal.Title>
